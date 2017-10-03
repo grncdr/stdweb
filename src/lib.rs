@@ -125,7 +125,7 @@ pub mod web {
     };
     pub use webapi::cross_origin_setting::CrossOriginSetting;
     pub use webapi::date::Date;
-    pub use webapi::event_target::{IEventTarget, EventTarget};
+    pub use webapi::event_target::{IEventTarget, EventTarget, EventListenerHandle};
     pub use webapi::node::{INode, Node, CloneKind};
     pub use webapi::element::{IElement, Element};
     pub use webapi::html_element::{IHtmlElement, HtmlElement};
@@ -158,6 +158,7 @@ pub mod web {
             IMouseEvent,
             IFocusEvent,
             IProgressEvent,
+            ConcreteEvent,
 
             EventPhase,
             KeyboardLocation,

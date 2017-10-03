@@ -175,6 +175,8 @@ pub enum EventPhase {
     Bubbling,
 }
 
+/// Trait implemented by concrete event instances. You probably don't want this
+/// but it can be useful for wrapping `add_event_listener`.
 pub trait ConcreteEvent: IEvent {
     /// A string representing the event type.
     ///

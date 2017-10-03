@@ -4,6 +4,7 @@ use webcore::value::Reference;
 use webcore::try_from::TryInto;
 use webapi::event::{ConcreteEvent, IEvent};
 
+/// A rust-side handle on an attached event listener.
 pub struct EventListenerHandle {
     event_type: &'static str,
     reference: Reference,
