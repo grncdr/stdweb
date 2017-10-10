@@ -738,6 +738,24 @@ reference_boilerplate! {
     convertible to KeyboardEvent
 }
 
+/// The `KeyupEvent` is fired when a key is released.
+///
+/// [(JavaScript docs)](https://developer.mozilla.org/en-US/docs/Web/Events/keyup)
+pub struct KeyupEvent( Reference );
+
+impl IEvent for KeyupEvent {}
+impl IKeyboardEvent for KeyupEvent {}
+impl ConcreteEvent for KeyupEvent {
+    const EVENT_TYPE &'static str = "keyup";
+}
+
+reference_boilerplate! {
+    KeyupEvent,
+    instanceof KeyboardEvent
+    convertible to Event
+    convertible to KeyboardEvent
+}
+
 /// The `IFocusEvent` interface represents focus-related
 /// events.
 ///

@@ -167,6 +167,7 @@ pub mod web {
             
             ChangeEvent,
             KeypressEvent,
+            KeyupEvent,
             ClickEvent,
             DoubleClickEvent,
             FocusEvent,
